@@ -1,0 +1,1187 @@
+{
+  "siteSettings": {
+    "name": "RIF",
+    "fullName": "Rohilkhand Incubation Foundation",
+    "tagline": "Building scalable ventures from research, regional insight, and founder grit.",
+    "location": "MJP Rohilkhand University, Bareilly, Uttar Pradesh",
+    "contactEmail": "hello@rif.org.in",
+    "contactPhone": "+91 98765 43210",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com",
+      "youtube": "https://www.youtube.com",
+      "instagram": "https://www.instagram.com"
+    },
+    "footerNote": "NSRCEL-inspired digital experience adapted for RIF with a modern content-managed architecture.",
+    "maintenanceMode": false,
+    "maintenanceTitle": "Maintenance in Progress",
+    "maintenanceMessage": "The website is temporarily unavailable while the RIF team performs maintenance and updates."
+  },
+  "pageVisibility": {
+    "home": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "about": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "leadership": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "governorMessage": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "chiefMinisterMessage": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "viceChancellorMessage": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "contact": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "team": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "boardOfDirectors": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "advisoryBoard": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "coreTeam": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "interns": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "incubatees": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "virtualStartups": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "facultyMembers": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "mentors": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "services": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "membershipPlans": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "rifServices": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "newsEvents": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "gallery": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "mediaCoverage": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "documents": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "testimonials": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "privacyPolicy": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "termsConditions": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "refundPolicy": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "apply": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "enquiry": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "membershipRegister": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." },
+    "incubateeRegister": { "enabled": true, "message": "This page is currently unavailable. Please check back soon or contact RIF for assistance." }
+  },
+  "homepage": {
+    "announcement": "Applications are live for the 2026 Venture Studio and community membership intake.",
+    "hero": {
+      "eyebrow": "Institutional Innovation Platform",
+      "title": "A startup launchpad for university-born ideas and market-ready ventures.",
+      "description": "RIF connects founders, mentors, researchers, and ecosystem partners through incubation, venture support, memberships, and startup services. The experience is modeled on the ambition and clarity of leading incubator websites while staying editable through a simple CMS.",
+      "primaryCtaLabel": "Send Enquiry",
+      "primaryCtaLink": "/enquiry",
+      "secondaryCtaLabel": "Explore Memberships",
+      "secondaryCtaLink": "/membership-plans",
+      "spotlightTitle": "What founders get inside the platform",
+      "spotlightItems": [
+        "Startup diagnostics and program matching",
+        "Mentor office hours and strategic reviews",
+        "Go-to-market support and visibility",
+        "Institutional documentation and reporting"
+      ]
+    },
+    "stats": [
+      {
+        "label": "Active incubatees",
+        "value": "42"
+      },
+      {
+        "label": "Mentors and experts",
+        "value": "68"
+      },
+      {
+        "label": "Programs and service tracks",
+        "value": "12"
+      },
+      {
+        "label": "Institutional partners",
+        "value": "18"
+      }
+    ],
+    "focusAreas": [
+      "Deeptech and research commercialization",
+      "Agri and rural innovation",
+      "Healthcare and social impact",
+      "Climate and circular systems",
+      "Digital transformation and AI"
+    ],
+    "featuredPrograms": [
+      {
+        "title": "Foundation Cohort",
+        "stage": "Idea Stage",
+        "mode": "8-week guided sprint",
+        "description": "Structured problem validation, user discovery, and early business model design for first-time founders."
+      },
+      {
+        "title": "Accelerate RIF",
+        "stage": "Validation Stage",
+        "mode": "16-week venture readiness track",
+        "description": "Hands-on support for traction, investor readiness, and product-market fit milestones."
+      },
+      {
+        "title": "Campus Venture Studio",
+        "stage": "Student Founders",
+        "mode": "Hybrid",
+        "description": "A year-round platform for student innovators to move from prototypes to scalable ventures."
+      }
+    ],
+    "testimonialsSection": {
+      "eyebrow": "Testimonials",
+      "title": "What founders, members, and ecosystem partners say about working with RIF.",
+      "description": "",
+      "previewCount": 3,
+      "ctaLabel": "View More Testimonials",
+      "ctaLink": "/testimonials",
+      "pageEyebrow": "Testimonials",
+      "pageTitle": "Voices from the RIF ecosystem",
+      "pageDescription": ""
+    },
+    "testimonials": [
+      {
+        "featuredOnHome": true,
+        "name": "Sanya Verma",
+        "role": "Founder, KrishiPulse",
+        "quote": "RIF helped us move from field insight to structured pilots with the right mentor support at the right time."
+      },
+      {
+        "featuredOnHome": true,
+        "name": "Kush Arora",
+        "role": "Founder, MedNerve Labs",
+        "quote": "The advisory access and review cadence gave us much more clarity on positioning, pilots, and next-stage conversations."
+      },
+      {
+        "featuredOnHome": true,
+        "name": "Muskan Ali",
+        "role": "Founder, Circular Foundry",
+        "quote": "RIF made our growth journey feel organized. We had useful feedback loops, stronger visibility, and better partner outreach."
+      },
+      {
+        "featuredOnHome": false,
+        "name": "Ritika Jain",
+        "role": "Community Member",
+        "quote": "From events to practical startup guidance, the experience feels warm, responsive, and genuinely helpful for early founders."
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Discover",
+        "description": "Map the problem, the market, and the founder's current readiness."
+      },
+      {
+        "title": "Build",
+        "description": "Design the venture narrative, support systems, and milestone roadmap."
+      },
+      {
+        "title": "Launch",
+        "description": "Move into pilots, partnerships, fundraising conversations, and ecosystem visibility."
+      }
+    ],
+    "partnerLogos": [
+      "Innovation Cell",
+      "State Startup Mission",
+      "Industry Network",
+      "Investor Circle",
+      "Research Labs"
+    ],
+    "cta": {
+      "title": "Designed for institutional credibility and founder momentum.",
+      "description": "",
+      "primaryLabel": "Send Enquiry",
+      "primaryLink": "/enquiry",
+      "secondaryLabel": "View Leadership",
+      "secondaryLink": "/leadership",
+      "qrLabel": "Quick Scan",
+      "qrTitle": "",
+      "qrNote": "",
+      "qrImageUrl": "",
+      "qrAssetId": ""
+    }
+  },
+  "about": {
+    "overview": {
+      "title": "About RIF",
+      "body": "Rohilkhand Incubation Foundation is a university-linked innovation platform that supports venture creation, startup services, ecosystem partnerships, and entrepreneurial capability building.",
+      "mission": "To help ambitious founders turn ideas into responsible, scalable ventures through structured support and strong ecosystem access.",
+      "vision": "To become a high-trust regional hub for innovation, venture building, and research commercialization."
+    },
+    "pillars": [
+      {
+        "title": "Incubation",
+        "description": "Stage-specific venture support covering discovery, validation, and growth."
+      },
+      {
+        "title": "Community",
+        "description": "Membership programs that keep founders, experts, and institutional partners engaged."
+      },
+      {
+        "title": "Capability",
+        "description": "Mentor access, workshops, reviews, and operational guidance."
+      },
+      {
+        "title": "Visibility",
+        "description": "News, events, founder stories, and document publishing for institutional outreach."
+      }
+    ],
+    "galleryIntro": "A flexible image and document module supports institution updates, visits, demos, and events.",
+    "documents": [
+      {
+        "id": "rif-brochure",
+        "title": "Institution Profile",
+        "type": "PDF",
+        "url": "#",
+        "description": "Overview document introducing the foundation, focus areas, and support capabilities."
+      },
+      {
+        "id": "annual-report",
+        "title": "Annual Progress Report",
+        "type": "PDF",
+        "url": "#",
+        "description": "Highlights of incubated ventures, partnerships, and operational milestones."
+      },
+      {
+        "id": "policy-kit",
+        "title": "Startup Policies and Downloads",
+        "type": "ZIP",
+        "url": "#",
+        "description": "A consolidated repository of forms, guides, and onboarding documents."
+      }
+    ]
+  },
+  "pageHeroPanels": {
+    "about": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "leadership": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "boardOfDirectors": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "advisoryBoard": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "coreTeam": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "contact": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": "",
+      "qrLabel": "",
+      "qrTitle": "",
+      "qrNote": "",
+      "qrImageUrl": "",
+      "qrAssetId": ""
+    },
+    "services": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "incubatees": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "virtualStartups": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "mentors": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "newsEvents": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "testimonials": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "privacyPolicy": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "termsConditions": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    },
+    "refundPolicy": {
+      "eyebrow": "",
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "imageAssetId": "",
+      "imageAlt": ""
+    }
+  },
+  "legalPages": {
+    "privacyPolicy": {
+      "eyebrow": "Legal",
+      "title": "Privacy Policy", 
+      "description": "How we collect, use, and safeguard the information shared through the RIF website and related forms.",
+      "summary": "We respect personal information and use it only for legitimate platform, program, and communication purposes.",
+      "sections": [
+        {
+          "id": "privacy-information-we-collect",
+          "heading": "Information We Collect",
+          "paragraphs": [
+            "{organisationName} may collect personal details that you voluntarily provide through enquiry forms, application forms, membership forms, newsletter requests, event registrations, and other website interactions. This may include your name, email address, phone number, organisation details, startup information, and supporting documents.",
+            "We may also collect limited technical information such as browser type, device information, pages visited, and approximate usage analytics to help us maintain and improve the website experience."
+          ]
+        },
+        {
+          "id": "privacy-how-we-use-information",
+          "heading": "How We Use Information",
+          "paragraphs": [
+            "We use collected information to respond to enquiries, evaluate applications, process memberships, provide startup support services, share updates related to programs and events, and improve our institutional communication.",
+            "Your information may also be used for internal record keeping, security monitoring, reporting, and compliance with legal or administrative obligations connected to our incubation and outreach activities."
+          ]
+        },
+        {
+          "id": "privacy-sharing-and-protection",
+          "heading": "Sharing and Protection",
+          "paragraphs": [
+            "{organisationName} does not sell personal information. Data may be shared only with authorised internal teams, mentors, reviewers, service partners, or legal authorities where reasonably required for program operations, verification, compliance, or service delivery.",
+            "We take reasonable administrative and technical steps to protect your information. However, no internet-based transmission or storage system can be guaranteed as completely secure."
+          ]
+        },
+        {
+          "id": "privacy-your-choices",
+          "heading": "Your Choices",
+          "paragraphs": [
+            "You may request correction, update, or deletion of personal information submitted through this website, subject to any record-retention needs, legal obligations, or active program requirements.",
+            "For privacy-related requests, please contact us at {contactEmail}. We will review requests in a reasonable time and respond based on applicable operational and legal requirements."
+          ]
+        }
+      ]
+    },
+    "termsConditions": {
+      "eyebrow": "Legal",
+      "title": "Terms and Conditions",
+      "description": "The general terms governing access to the website, use of forms, and participation-related requests.",
+      "summary": "Using this website means agreeing to fair, lawful, and institutionally managed use of its content, forms, and services.",
+      "sections": [
+        {
+          "id": "terms-use-of-the-website",
+          "heading": "Use of the Website",
+          "paragraphs": [
+            "By accessing or using this website, you agree to use it lawfully and in a manner that does not disrupt, damage, or impair the services, content, infrastructure, or experience of other users.",
+            "Content on this website is provided for general institutional, informational, and program-related purposes. {organisationName} may update, revise, suspend, or remove content, forms, services, or website features at any time without prior notice."
+          ]
+        },
+        {
+          "id": "terms-applications-memberships-and-services",
+          "heading": "Applications, Memberships, and Services",
+          "paragraphs": [
+            "Submission of any application, registration, membership, or service request through this website does not by itself guarantee acceptance, onboarding, approval, funding, incubation, certification, or any specific outcome.",
+            "{organisationName} reserves the right to review eligibility, request supporting information, reject incomplete submissions, and make final decisions on participation, services, and institutional engagement according to its internal criteria and policies."
+          ]
+        },
+        {
+          "id": "terms-intellectual-property-and-accuracy",
+          "heading": "Intellectual Property and Accuracy",
+          "paragraphs": [
+            "Unless otherwise stated, website content including text, branding, layouts, graphics, and downloadable material belongs to or is used with permission by {organisationName}. Unauthorised copying, commercial reuse, or misrepresentation is prohibited.",
+            "While we aim to keep content accurate and current, we do not warrant that all information is always complete, error-free, or uninterrupted. Users should contact us directly for confirmation where a matter is important."
+          ]
+        },
+        {
+          "id": "terms-limitation-and-contact",
+          "heading": "Limitation and Contact",
+          "paragraphs": [
+            "{organisationName} will not be responsible for indirect, incidental, or consequential loss arising from use of this website, reliance on website content, temporary unavailability, or third-party links and services.",
+            "Questions about these terms may be shared with us at {contactEmail} or through our office at {location}."
+          ]
+        }
+      ]
+    },
+    "refundPolicy": {
+      "eyebrow": "Legal",
+      "title": "Refund Policy",
+      "description": "The standard policy governing payments, exceptions, and refund-related support requests.",
+      "summary": "Most payments are non-refundable once processed, with limited review for duplicate charges, technical errors, or operational cancellations.",
+      "sections": [
+        {
+          "id": "refund-general-refund-position",
+          "heading": "General Refund Position",
+          "paragraphs": [
+            "{organisationName} may collect payments for memberships, registrations, services, events, workshops, or other approved activities where applicable. Unless a specific written commitment states otherwise, payments once processed are generally treated as non-refundable.",
+            "This approach is necessary because administrative review, scheduling, documentation handling, and service allocation may begin soon after successful payment or registration."
+          ]
+        },
+        {
+          "id": "refund-cases-where-review-may-be-considered",
+          "heading": "Cases Where Review May Be Considered",
+          "paragraphs": [
+            "Refund requests may be reviewed in limited situations such as duplicate transactions, proven technical payment errors, or payments received for a service that {organisationName} is unable to provide due to its own operational cancellation.",
+            "Any approved refund will be processed only after verification of payment records, request details, and the applicable service terms for the relevant program, event, or membership."
+          ]
+        },
+        {
+          "id": "refund-non-refundable-situations",
+          "heading": "Non-Refundable Situations",
+          "paragraphs": [
+            "Refunds are ordinarily not available where a user changes their mind after applying or registering, fails to attend a session or event, provides incomplete or incorrect information, or is found ineligible under program or membership criteria.",
+            "Processing charges, gateway charges, taxes, and other third-party deductions may also be excluded from any refund amount where such charges are non-recoverable."
+          ]
+        },
+        {
+          "id": "refund-how-to-request-support",
+          "heading": "How to Request Support",
+          "paragraphs": [
+            "For payment-related queries, please contact {organisationName} at {contactEmail} with your name, transaction reference, payment date, amount, and the reason for the request.",
+            "We will review the request in good faith and communicate the status after verification. Where a refund is approved, timelines will depend on banking and payment partner processing cycles."
+          ]
+        }
+      ]
+    }
+  },
+  "team": {
+    "leadershipContent": {
+      "eyebrow": "Leadership",
+      "title": "Leadership that guides governance, direction, and founder confidence.",
+      "description": "Explore the strategic pillars behind RIF along with the board and advisory leaders who shape institutional momentum.",
+      "primaryCtaLabel": "Board of Directors",
+      "primaryCtaLink": "/leadership/board-of-directors",
+      "secondaryCtaLabel": "Send Enquiry",
+      "secondaryCtaLink": "/enquiry",
+      "pillarsEyebrow": "Leadership Pillars",
+      "pillarsTitle": "The principles guiding how RIF builds trust and momentum.",
+      "pillarsDescription": "These pillars now sit within Leadership so governance, advisory support, and strategic direction are presented together.",
+      "governorMessage": {
+        "eyebrow": "Governor, Uttar Pradesh",
+        "name": "Anandiben Patel",
+        "buttonLabel": "Message from Governor",
+        "buttonLink": "/leadership/message-from-governor",
+        "pageEyebrow": "Leadership Message",
+        "pageTitle": "Message from Governor",
+        "imageUrl": "",
+        "imageAssetId": "",
+        "imageAlt": "Governor of Uttar Pradesh",
+        "letterSectionLabel": "Official Letter",
+        "letterSectionTitle": "View the signed governor message",
+        "letterSectionDescription": "",
+        "letterImageUrl": "",
+        "letterImageAssetId": "",
+        "letterImageAlt": "Signed governor message letter",
+        "message": "I feel extremely proud to know that Mahatma Jyotiba Phule Rohilkhand University, Bareilly, is sharing the promotional brochure of the Rohilkhand Incubation Foundation, established under the State Government of Uttar Pradesh to promote entrepreneurship."
+      },
+      "chiefMinisterMessage": {
+        "eyebrow": "Chief Minister, Uttar Pradesh",
+        "name": "Yogi Adityanath",
+        "buttonLabel": "Message from Chief Minister",
+        "buttonLink": "/leadership/message-from-chief-minister",
+        "pageEyebrow": "Leadership Message",
+        "pageTitle": "Message from Chief Minister",
+        "imageUrl": "",
+        "imageAssetId": "",
+        "imageAlt": "Chief Minister of Uttar Pradesh",
+        "letterSectionLabel": "Official Letter",
+        "letterSectionTitle": "View the signed chief minister message",
+        "letterSectionDescription": "",
+        "letterImageUrl": "",
+        "letterImageAssetId": "",
+        "letterImageAlt": "Signed chief minister message letter",
+        "message": "Innovation, entrepreneurship, and institutional collaboration can create transformative opportunities for young founders across Uttar Pradesh. Initiatives that connect education, incubation, and industry help build a stronger startup ecosystem for the state."
+      },
+      "viceChancellorMessage": {
+        "eyebrow": "Vice Chancellor",
+        "name": "Vice Chancellor",
+        "buttonLabel": "Message from Vice Chancellor",
+        "buttonLink": "/leadership/message-from-vice-chancellor",
+        "pageEyebrow": "Leadership Message",
+        "pageTitle": "Message from Vice Chancellor",
+        "imageUrl": "",
+        "imageAssetId": "",
+        "imageAlt": "Vice Chancellor message",
+        "letterSectionLabel": "Official Letter",
+        "letterSectionTitle": "View the signed vice chancellor message",
+        "letterSectionDescription": "",
+        "letterImageUrl": "",
+        "letterImageAssetId": "",
+        "letterImageAlt": "Signed vice chancellor message letter",
+        "message": "Rohilkhand Incubation Foundation reflects our commitment to nurture research, innovation, and entrepreneurship together. We aim to support students, researchers, and founders with an ecosystem that helps promising ideas become impactful ventures."
+      }
+    },
+    "boardOfDirectors": [
+      {
+        "id": "board-1",
+        "name": "Prof. Ananya Sethi",
+        "role": "Chairperson",
+        "bio": "Leads institutional innovation strategy with a focus on entrepreneurial research ecosystems.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "board-2",
+        "name": "Dr. Raghav Bhatia",
+        "role": "Director",
+        "bio": "Works on academic-industry partnerships and startup capacity building.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      }
+    ],
+    "additionalDirectors": [],
+    "advisoryBoard": [
+      {
+        "id": "advisor-1",
+        "name": "Dr. Vipin Kumar",
+        "role": "Director and Chief Innovation Officer",
+        "bio": "Provides innovation strategy leadership for institutional and startup growth.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "advisor-2",
+        "name": "Mr. Ghanshyam Khandelwal",
+        "role": "Chief Advisor (Industry), RIF",
+        "bio": "Supports founder growth with practical industry advisory and strategic direction.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "advisor-3",
+        "name": "Mr. Dinesh Goyal",
+        "role": "Chief Advisor (Industry), RIF",
+        "bio": "Guides industry alignment and ecosystem collaboration across venture initiatives.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "advisor-4",
+        "name": "Dr. Swatantra Kumar",
+        "role": "Chief Advisor (Media and Marketing)",
+        "bio": "Leads media and outreach guidance for founder storytelling and visibility.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "advisor-5",
+        "name": "Mr. Ashish Saxena",
+        "role": "Chief Advisor (Finance), RIF",
+        "bio": "Advises on finance strategy, planning, and investment readiness pathways.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "advisor-6",
+        "name": "Ms. Tulika Agarwal",
+        "role": "Academic Advisor, RIF",
+        "bio": "Supports academic integration and institution-linked innovation programs.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      }
+    ],
+    "coreTeam": [
+      {
+        "id": "core-1",
+        "name": "Ira Singh",
+        "role": "Program Manager",
+        "bio": "Owns cohort operations, founder experience, and ecosystem coordination.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "core-2",
+        "name": "Zeeshan Khan",
+        "role": "Partnerships Lead",
+        "bio": "Builds relationships with institutions, corporates, and ecosystem collaborators.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "core-3",
+        "name": "Ritika Jain",
+        "role": "Community and Content Lead",
+        "bio": "Handles media updates, events, and narrative consistency across channels.",
+        "imageUrl": "",
+        "imageAssetId": ""
+      }
+    ],
+    "interns": [
+      {
+        "id": "intern-1",
+        "name": "Aarav Sharma",
+        "role": "Startup Operations Intern",
+        "bio": "Supports founder coordination, program documentation, and daily incubation workflows.",
+        "linkedinUrl": "",
+        "githubUrl": "",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "intern-2",
+        "name": "Nisha Verma",
+        "role": "Marketing and Outreach Intern",
+        "bio": "Assists with event communications, social media updates, and community engagement.",
+        "linkedinUrl": "",
+        "githubUrl": "",
+        "imageUrl": "",
+        "imageAssetId": ""
+      },
+      {
+        "id": "intern-3",
+        "name": "Kabir Khan",
+        "role": "Research and Documentation Intern",
+        "bio": "Helps maintain startup records, ecosystem research notes, and program reports.",
+        "linkedinUrl": "",
+        "githubUrl": "",
+        "imageUrl": "",
+        "imageAssetId": ""
+      }
+    ]
+  },
+  "incubatees": [
+    {
+      "id": "incubatee-1",
+      "name": "KrishiPulse",
+      "sector": "AgriTech",
+      "stage": "Pilot Ready",
+      "summary": "Decision support tools for precision farming and rural advisory services.",
+      "founder": "Sanya Verma",
+      "location": "Bareilly",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "incubatee-2",
+      "name": "MedNerve Labs",
+      "sector": "HealthTech",
+      "stage": "Clinical Validation",
+      "summary": "Workflow automation tools for preventive care and patient follow-up.",
+      "founder": "Kush Arora",
+      "location": "Noida",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "incubatee-3",
+      "name": "Circular Foundry",
+      "sector": "ClimateTech",
+      "stage": "Go-to-Market",
+      "summary": "Circular materials recovery solutions for industrial and campus waste streams.",
+      "founder": "Muskan Ali",
+      "location": "Lucknow",
+      "imageUrl": "",
+      "imageAssetId": ""
+    }
+  ],
+  "virtualStartups": [
+    {
+      "id": "virtual-startup-1",
+      "name": "CampusLink Cloud",
+      "tagline": "Remote collaboration for student-led ventures",
+      "sector": "EdTech",
+      "stage": "Beta",
+      "founder": "Aarav Mishra",
+      "location": "Bareilly",
+      "summary": "A virtual-first collaboration workspace for student founders to plan, pitch, and manage early-stage teams.",
+      "description": "CampusLink Cloud helps student and university-led startups coordinate tasks, share files, and run founder reviews from anywhere.",
+      "establishmentYear": "2024",
+      "objectives": "Enable distributed startup teams with a simple virtual operating system.",
+      "directors": "Aarav Mishra\nSakshi Verma",
+      "email": "hello@campuslinkcloud.com",
+      "phone": "+91 98765 12001",
+      "website": "campuslinkcloud.com",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "virtual-startup-2",
+      "name": "RemoteHealth Connect",
+      "tagline": "Virtual care coordination and follow-up",
+      "sector": "HealthTech",
+      "stage": "Pilot",
+      "founder": "Naina Kapoor",
+      "location": "Noida",
+      "summary": "A digital care coordination platform for clinics and patient follow-up workflows.",
+      "description": "RemoteHealth Connect supports virtual consultations, reminders, and care journeys for growing healthcare teams.",
+      "establishmentYear": "2023",
+      "objectives": "Bring together virtual care and patient support in one workflow.",
+      "directors": "Naina Kapoor\nDr. Anil Jha",
+      "email": "team@remotehealthconnect.in",
+      "phone": "+91 98765 12002",
+      "website": "remotehealthconnect.in",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "virtual-startup-3",
+      "name": "AgriSphere Virtual",
+      "tagline": "Farmer advisory with remote support tools",
+      "sector": "AgriTech",
+      "stage": "Validation",
+      "founder": "Ritika Singh",
+      "location": "Lucknow",
+      "summary": "Remote agronomy support and digital advisory services for farms and FPOs.",
+      "description": "AgriSphere Virtual helps field teams and farm advisors coordinate insights, crop checks, and digital guidance from anywhere.",
+      "establishmentYear": "2024",
+      "objectives": "Scale advisory support for agriculture through virtual operations.",
+      "directors": "Ritika Singh\nMohit Yadav",
+      "email": "contact@agrispherevirtual.com",
+      "phone": "+91 98765 12003",
+      "website": "agrispherevirtual.com",
+      "imageUrl": "",
+      "imageAssetId": ""
+    }
+  ],
+  "mentors": [
+    {
+      "id": "mentor-1",
+      "name": "Rohit Wadhwa",
+      "expertise": "Growth and GTM",
+      "company": "Independent Advisor",
+      "focus": "Market validation, customer discovery, and early revenue planning.",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "mentor-2",
+      "name": "Dr. Kavya Menon",
+      "expertise": "Healthcare Product Strategy",
+      "company": "Health Systems Collective",
+      "focus": "Clinical workflows, product positioning, and pilot design.",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "mentor-3",
+      "name": "Sourabh Taneja",
+      "expertise": "Finance and Fundraising",
+      "company": "Venture Finance Partner",
+      "focus": "Financial models, readiness reviews, and investor communication.",
+      "imageUrl": "",
+      "imageAssetId": ""
+    }
+  ],
+  "facultyMembers": [
+    {
+      "id": "faculty-1",
+      "name": "Prof. Shalini Verma",
+      "designation": "Professor, Computer Science",
+      "department": "MJP Rohilkhand University",
+      "focus": "Innovation mentoring, applied research translation, and startup problem validation.",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "faculty-2",
+      "name": "Dr. Arvind Kumar Singh",
+      "designation": "Associate Professor, Management Studies",
+      "department": "MJP Rohilkhand University",
+      "focus": "Business model refinement, founder readiness, and institutional entrepreneurship programs.",
+      "imageUrl": "",
+      "imageAssetId": ""
+    },
+    {
+      "id": "faculty-3",
+      "name": "Dr. Neha Saxena",
+      "designation": "Assistant Professor, Biotechnology",
+      "department": "MJP Rohilkhand University",
+      "focus": "Research commercialization, domain guidance, and early-stage solution review.",
+      "imageUrl": "",
+      "imageAssetId": ""
+    }
+  ],
+  "services": [
+    {
+      "id": "service-1",
+      "title": "Incubation and Cohort Management",
+      "category": "Core Program",
+      "description": "Cohort design, founder diagnostics, milestone reviews, and structured venture support.",
+      "items": [
+        "Readiness assessment",
+        "Milestone planning",
+        "Mentor mapping"
+      ]
+    },
+    {
+      "id": "service-2",
+      "title": "Business Support Services",
+      "category": "Operations",
+      "description": "Brand positioning, GTM planning, operational playbooks, and business process support.",
+      "items": [
+        "Narrative design",
+        "Partnership outreach",
+        "Commercial readiness"
+      ]
+    },
+    {
+      "id": "service-3",
+      "title": "Investor and Partner Connects",
+      "category": "Ecosystem",
+      "description": "Structured exposure to investors, industry experts, and institutional collaborators.",
+      "items": [
+        "Pitch reviews",
+        "Network introductions",
+        "Demo day support"
+      ]
+    }
+  ],
+  "membershipPlans": [
+    {
+      "id": "plan-1",
+      "name": "Community",
+      "price": "Rs. 2,500",
+      "frequency": "per quarter",
+      "description": "For founders who want ecosystem access, events, and curated updates.",
+      "features": [
+        "Access to events",
+        "Monthly founder clinic",
+        "Resource library"
+      ]
+    },
+    {
+      "id": "plan-2",
+      "name": "Builder",
+      "price": "Rs. 9,000",
+      "frequency": "per quarter",
+      "description": "For active ventures that need reviews, advisory time, and structured support.",
+      "features": [
+        "Mentor reviews",
+        "Growth planning",
+        "Priority support"
+      ]
+    },
+    {
+      "id": "plan-3",
+      "name": "Institutional Partner",
+      "price": "Custom",
+      "frequency": "annual",
+      "description": "For colleges, labs, and ecosystem bodies that want a coordinated innovation interface.",
+      "features": [
+        "Custom engagements",
+        "Joint programming",
+        "Reporting support"
+      ]
+    }
+  ],
+  "rifServices": {
+    "pageEyebrow": "Our Services",
+    "pageTitle": "Custom IT solutions for your successful business",
+    "benefitsEyebrow": "Benefits",
+    "benefitsTitle": "Benefits to Choose RIF",
+    "benefits": [
+      {
+        "id": "benefit-1",
+        "title": "Physical Infrastructure",
+        "description": "Incubatees receive access to shared workspaces, internet, meeting areas, and essential infrastructure support."
+      },
+      {
+        "id": "benefit-2",
+        "title": "Quality Mentorship",
+        "description": "Guidance from industry experts, researchers, and practitioners to strengthen technical and business readiness."
+      },
+      {
+        "id": "benefit-3",
+        "title": "Technical Consultancy",
+        "description": "Support in product validation, technology choices, operations, and commercialization planning."
+      },
+      {
+        "id": "benefit-4",
+        "title": "Training and Workshops",
+        "description": "Programs and workshops focused on product, market, compliance, and growth capabilities."
+      },
+      {
+        "id": "benefit-5",
+        "title": "Financial Support",
+        "description": "Connects to grants, investor programs, and partner institutions where applicable."
+      }
+    ],
+    "otherServicesEyebrow": "Other Services",
+    "otherServicesTitle": "Custom IT solutions for your successful business",
+    "serviceTiles": [
+      {
+        "id": "tile-1",
+        "title": "Events",
+        "description": "Startup networking and ecosystem events that strengthen exposure and collaboration.",
+        "iconUrl": "",
+        "iconAssetId": "",
+        "iconAlt": "Events icon"
+      },
+      {
+        "id": "tile-2",
+        "title": "Shared Resources",
+        "description": "Shared facilities and common resources for participating founders and teams.",
+        "iconUrl": "",
+        "iconAssetId": "",
+        "iconAlt": "Shared resources icon"
+      },
+      {
+        "id": "tile-3",
+        "title": "Technical Support",
+        "description": "Technical advisory and execution support for product and operations readiness.",
+        "iconUrl": "",
+        "iconAssetId": "",
+        "iconAlt": "Technical support icon"
+      },
+      {
+        "id": "tile-4",
+        "title": "Mentorship",
+        "description": "Domain mentors and founder advisors to accelerate problem-solving and execution.",
+        "iconUrl": "",
+        "iconAssetId": "",
+        "iconAlt": "Mentorship icon"
+      }
+    ],
+    "supportCardTitle": "Call Us For Any Query",
+    "supportCardDescription": "Please connect with our team for guidance, support, and collaboration enquiries.",
+    "supportPhone": "+91 8979794345",
+    "eligibilityTitle": "Eligibility Criteria for Incubatees",
+    "eligibilityIntro": "Entrepreneurs and startups interested in applying for incubation at RIF should review the following criteria.",
+    "eligibilityPoints": [
+      {
+        "id": "eligibility-1",
+        "title": "Innovation Focus",
+        "description": "Startup or entrepreneur should be an innovative product, process, or service candidate."
+      },
+      {
+        "id": "eligibility-2",
+        "title": "Entity Type",
+        "description": "Entity can be a private limited company, LLP, registered partnership firm, or proprietorship."
+      },
+      {
+        "id": "eligibility-3",
+        "title": "Startup Age",
+        "description": "The startup should be less than 10 years old from the date of incorporation."
+      },
+      {
+        "id": "eligibility-4",
+        "title": "Turnover Limit",
+        "description": "Annual turnover in any preceding financial year must not exceed INR 25 crore."
+      },
+      {
+        "id": "eligibility-5",
+        "title": "Scalability",
+        "description": "The venture should have potential for scaling and employment generation."
+      }
+    ],
+    "screeningTitle": "Screening Process for Incubatees",
+    "screeningSteps": [
+      {
+        "id": "step-1",
+        "title": "Step 1",
+        "description": "Submission of application in electronic format by entrepreneurs or startups."
+      },
+      {
+        "id": "step-2",
+        "title": "Step 2",
+        "description": "Review by the incubation evaluation committee and initial screening."
+      },
+      {
+        "id": "step-3",
+        "title": "Step 3",
+        "description": "Presentation by shortlisted applicants before the committee."
+      },
+      {
+        "id": "step-4",
+        "title": "Step 4",
+        "description": "Final recommendation and incubation agreement process for selected startups."
+      }
+    ]
+  },
+  "news": [
+    {
+      "id": "news-1",
+      "type": "News",
+      "title": "RIF opens the 2026 startup applications window",
+      "excerpt": "Applications are now open for founders working on early-stage, research-backed, or regionally relevant ventures.",
+      "publishedAt": "2026-03-05",
+      "link": "/apply",
+      "category": "Programs",
+      "author": "RIF Desk"
+    },
+    {
+      "id": "news-2",
+      "type": "Update",
+      "title": "Mentor network expands with sector specialists",
+      "excerpt": "New mentors join the network to support healthcare, agri innovation, and venture finance.",
+      "publishedAt": "2026-02-21",
+      "link": "/mentors",
+      "category": "Ecosystem",
+      "author": "RIF Desk"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-1",
+      "title": "Founder Open House",
+      "location": "RIF Innovation Hub",
+      "date": "2026-03-22",
+      "status": "Upcoming",
+      "link": "/news-events",
+      "summary": "An open information session for founders exploring RIF's programs and membership tracks."
+    },
+    {
+      "id": "event-2",
+      "title": "Investor Readiness Clinic",
+      "location": "Hybrid",
+      "date": "2026-04-03",
+      "status": "Upcoming",
+      "link": "/news-events",
+      "summary": "A working clinic for founders preparing decks, metrics, and fundraising narratives."
+    }
+  ],
+  "heroSlider": [
+    {
+      "id": "hero-slide-1",
+      "title": "Empowering Startups",
+      "altText": "Founders collaborating in the RIF workspace",
+      "imageUrl": ""
+    },
+    {
+      "id": "hero-slide-2",
+      "title": "Mentor-Led Growth",
+      "altText": "Mentor session with startup founders",
+      "imageUrl": ""
+    },
+    {
+      "id": "hero-slide-3",
+      "title": "Innovation in Motion",
+      "altText": "Startup team planning their next milestone",
+      "imageUrl": ""
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gallery-1",
+      "title": "Demo Day Walkthrough",
+      "description": "Pitch practice, mentor reviews, and team coordination ahead of founder showcase day.",
+      "altText": "Demo day walkthrough",
+      "imageUrl": ""
+    },
+    {
+      "id": "gallery-2",
+      "title": "Campus Innovation Sprint",
+      "description": "Students, faculty, and founders collaborated on venture problem statements and prototypes.",
+      "altText": "Campus innovation sprint",
+      "imageUrl": ""
+    },
+    {
+      "id": "gallery-3",
+      "title": "Mentor Roundtable",
+      "description": "Sector specialists reviewed venture progress, partnerships, and founder priorities.",
+      "altText": "Mentor roundtable",
+      "imageUrl": ""
+    },
+    {
+      "id": "gallery-4",
+      "title": "Founder Office Hours",
+      "description": "Hands-on sessions for applications, milestone planning, and support workflows.",
+      "altText": "Founder office hours",
+      "imageUrl": ""
+    }
+  ],
+  "mediaCoverage": [
+    {
+      "id": "media-1",
+      "title": "RIF featured in regional startup coverage",
+      "description": "A press clipping covering founder support and university-linked innovation efforts.",
+      "altText": "Regional newspaper coverage",
+      "imageUrl": ""
+    },
+    {
+      "id": "media-2",
+      "title": "Newspaper spotlight on ecosystem outreach",
+      "description": "Coverage highlighting RIF events, mentoring support, and local innovation visibility.",
+      "altText": "Media coverage highlight",
+      "imageUrl": ""
+    }
+  ],
+  "formsMeta": {
+    "apply": {
+      "title": "Apply to RIF",
+      "intro": "Use this form for incubation or program admission requests.",
+      "points": [
+        "Share your startup idea and stage",
+        "Explain the problem and traction so far",
+        "Mention the support you expect from RIF"
+      ],
+      "qrCodeLabel": "Scan to Pay",
+      "qrCodeTitle": "Application Payment QR",
+      "qrCodeNote": "",
+      "qrCodeImageUrl": "",
+      "qrCodeAssetId": ""
+    },
+    "membership": {
+      "title": "Register for Membership",
+      "intro": "Choose a plan and tell us how you want to engage with the ecosystem.",
+      "points": [
+        "Select your membership track",
+        "Tell us your role and goals",
+        "Add your organization details"
+      ],
+      "qrCodeLabel": "Scan to Pay",
+      "qrCodeTitle": "Membership Payment QR",
+      "qrCodeNote": "",
+      "qrCodeImageUrl": "",
+      "qrCodeAssetId": ""
+    },
+    "enquiry": {
+      "title": "General Enquiry",
+      "intro": "Use this form for general questions, collaboration requests, startup support queries, or follow-up conversations with the RIF team.",
+      "points": [
+        "Share your basic contact details",
+        "Tell us the topic of your enquiry",
+        "Explain how the RIF team can help"
+      ],
+      "qrCodeLabel": "Quick Connect",
+      "qrCodeTitle": "General Enquiry QR",
+      "qrCodeNote": "",
+      "qrCodeImageUrl": "",
+      "qrCodeAssetId": ""
+    }
+  },
+  "submissions": {
+    "apply": [],
+    "membership": [],
+    "enquiry": []
+  }
+}
