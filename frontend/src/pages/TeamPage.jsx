@@ -87,8 +87,8 @@ const sectionConfig = {
     title: "Core Team",
     eyebrow: "Team",
     description: "Use the RIF Team menu to switch between the core team, interns, and mentor profiles.",
-    primaryAction: { label: "Meet Interns", to: "/team/interns" },
-    secondaryAction: { label: "Browse Mentors", to: "/mentors" },
+    primaryAction: { label: "Browse Mentors", to: "/mentors" },
+    secondaryAction: { label: "Send Enquiry", to: "/enquiry" },
     style: "advisory"
   },
   interns: {
@@ -178,6 +178,7 @@ export default function TeamPage({ sectionKey = "coreTeam" }) {
   const activeSection = sectionConfig[sectionKey] || sectionConfig.coreTeam;
   const sectionItems = team?.[sectionKey] || team?.coreTeam || [];
   const additionalDirectors = team?.additionalDirectors || [];
+  const internItems = team?.interns || [];
 
   return (
     <>
@@ -198,6 +199,15 @@ export default function TeamPage({ sectionKey = "coreTeam" }) {
       />
       {sectionKey === "boardOfDirectors" && additionalDirectors.length ? (
         <TeamSection id="additional-directors" items={additionalDirectors} style={activeSection.style} title="Additional Directors" />
+      ) : null}
+      {sectionKey === "coreTeam" && internItems.length ? (
+        <TeamSection
+          id={sectionConfig.interns.id}
+          items={internItems}
+          showSocials={sectionConfig.interns.showSocials}
+          style={sectionConfig.interns.style}
+          title={sectionConfig.interns.title}
+        />
       ) : null}
     </>
   );

@@ -2193,6 +2193,213 @@ const MediaCollectionEditor = ({
   );
 };
 
+const GalleryAlbumsEditor = ({
+  albums = [],
+  onChange,
+  onUploadImages,
+  uploadingKey,
+  title = "Gallery Albums",
+  helper = "Organize event photos into albums. The first photo or selected cover appears as the thumbnail."
+}) => {
+  const safeAlbums = albums || [];
+
+  const updateAlbum = (albumId, fieldKey, nextValue) => {
+    onChange(
+      safeAlbums.map((album) =>
+        album.id === albumId
+          ? {
+              ...album,
+              [fieldKey]: nextValue
+            }
+          : album
+      )
+    );
+  };
+
+  const removeAlbum = (albumId) => {
+    onChange(safeAlbums.filter((album) => album.id !== albumId));
+  };
+
+  const addAlbum = () => {
+    onChange([
+      ...safeAlbums,
+      {
+        id: createId(),
+        title: "",
+        description: "",
+        imageUrl: "",
+        imageAssetId: "",
+        images: []
+      }
+    ]);
+  };
+
+  const getAlbumPhotos = (album) => {
+    if (Array.isArray(album.images) && album.images.length > 0) {
+      return album.images;
+    }
+    if (album.imageUrl) {
+      return [{ id: `${album.id}-cover`, imageUrl: album.imageUrl, imageAssetId: album.imageAssetId || "" }];
+    }
+    return [];
+  };
+
+  const setCover = (albumId, photo) => {
+    onChange(
+      safeAlbums.map((album) => {
+        if (album.id !== albumId) return album;
+        return {
+          ...album,
+          imageUrl: photo.imageUrl,
+          imageAssetId: photo.imageAssetId || "",
+          images: getAlbumPhotos(album)
+        };
+      })
+    );
+  };
+
+  const removePhoto = (albumId, photoId) => {
+    onChange(
+      safeAlbums.map((album) => {
+        if (album.id !== albumId) return album;
+        const currentPhotos = getAlbumPhotos(album);
+        const nextPhotos = currentPhotos.filter((p) => p.id !== photoId);
+        const removed = currentPhotos.find((p) => p.id === photoId);
+        const wasCover = album.imageUrl ? album.imageUrl === removed?.imageUrl : currentPhotos[0]?.id === photoId;
+        let nextCover = album.imageUrl;
+        let nextCoverAssetId = album.imageAssetId;
+        if (wasCover) {
+          nextCover = nextPhotos[0]?.imageUrl || "";
+          nextCoverAssetId = nextPhotos[0]?.imageAssetId || "";
+        }
+        return {
+          ...album,
+          imageUrl: nextCover,
+          imageAssetId: nextCoverAssetId,
+          images: nextPhotos
+        };
+      })
+    );
+  };
+
+  return (
+    <section className="admin-panel">
+      <div className="admin-panel-head">
+        <div>
+          <h3>{title}</h3>
+          <p className="muted-copy">{helper}</p>
+        </div>
+        <button className="button button-small" onClick={addAlbum} type="button">
+          Add Album
+        </button>
+      </div>
+      <div className="album-admin-list">
+        {safeAlbums.map((album) => {
+          const photos = getAlbumPhotos(album);
+          const isUploading = uploadingKey === album.id;
+          const currentCoverUrl = album.imageUrl || photos[0]?.imageUrl || "";
+
+          return (
+            <article className="admin-card album-admin-card" key={album.id}>
+              <div className="admin-card-head">
+                <strong>{album.title || "Untitled Album"}</strong>
+                <InlineConfirmButton
+                  message={`Delete album "${album.title || "Untitled"}"?`}
+                  onConfirm={() => removeAlbum(album.id)}
+                />
+              </div>
+              <div className="admin-form-grid">
+                <label className="field field-span-2">
+                  <span>Event / Album Title</span>
+                  <input
+                    placeholder="e.g. Annual Innovation Summit 2026"
+                    type="text"
+                    value={album.title || ""}
+                    onChange={(event) => updateAlbum(album.id, "title", event.target.value)}
+                  />
+                </label>
+                <label className="field field-span-2">
+                  <span>Short Description (Optional)</span>
+                  <textarea
+                    placeholder="Brief description of the event or photo collection..."
+                    rows="2"
+                    value={album.description || ""}
+                    onChange={(event) => updateAlbum(album.id, "description", event.target.value)}
+                  />
+                </label>
+                <label className="field field-span-2">
+                  <span>Add Photos (select multiple)</span>
+                  <input
+                    accept="image/*"
+                    disabled={isUploading}
+                    multiple
+                    type="file"
+                    onChange={(event) => {
+                      const files = event.target.files;
+                      if (files && files.length > 0) {
+                        onUploadImages(album.id, files);
+                      }
+                      event.target.value = "";
+                    }}
+                  />
+                </label>
+              </div>
+              {isUploading ? <p className="form-message">Uploading photos...</p> : null}
+
+              <div className="album-admin-photos-header">
+                <span>Album Photos ({photos.length})</span>
+                {photos.length > 0 ? (
+                  <small className="muted-copy">Click "Set cover" to select the album thumbnail.</small>
+                ) : null}
+              </div>
+
+              {photos.length ? (
+                <div className="album-admin-grid">
+                  {photos.map((photo, idx) => {
+                    const isCover = photo.imageUrl === currentCoverUrl;
+                    return (
+                      <div
+                        className={`album-admin-photo-card${isCover ? " is-cover" : ""}`}
+                        key={photo.id || photo.imageUrl || idx}
+                      >
+                        <div className="album-admin-photo-thumb">
+                          <img alt="" src={resolveMediaUrl(photo.imageUrl, album.title)} />
+                          {isCover ? <span className="album-admin-cover-tag">Cover</span> : null}
+                        </div>
+                        <div className="album-admin-photo-actions">
+                          {!isCover ? (
+                            <button
+                              className="button button-small button-ghost"
+                              onClick={() => setCover(album.id, photo)}
+                              type="button"
+                            >
+                              Set cover
+                            </button>
+                          ) : null}
+                          <button
+                            className="button button-small button-ghost"
+                            onClick={() => removePhoto(album.id, photo.id)}
+                            type="button"
+                          >
+                            Remove
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <p className="muted-copy">No photos in this album yet. Select files above to upload.</p>
+              )}
+            </article>
+          );
+        })}
+      </div>
+      {!safeAlbums.length ? <p className="muted-copy">No albums added yet. Click "Add Album" to create one.</p> : null}
+    </section>
+  );
+};
+
 const NewsEventsCollectionEditor = ({
   title,
   helper,
@@ -2922,6 +3129,77 @@ export default function AdminDashboardPage({ teamMode = false }) {
       assetKey: "thumbnailAssetId",
       successMessage: "News or event thumbnail uploaded and saved."
     });
+  };
+
+  const handleAlbumImagesUpload = async (albumId, fileList) => {
+    const files = Array.from(fileList || []).filter((file) => file?.type?.startsWith("image/"));
+    if (!files.length) {
+      setFeedback("Please select valid image files to upload.");
+      return;
+    }
+
+    try {
+      setUploadingTarget(`gallery:${albumId}`);
+      setFeedback(`Uploading ${files.length} image${files.length === 1 ? "" : "s"}...`);
+
+      const uploadedImages = [];
+      for (const file of files) {
+        const uploadResult = await uploadImageAsset(file, sessionToken);
+        uploadedImages.push({
+          id: createId(),
+          imageUrl: uploadResult.imageUrl,
+          imageAssetId: uploadResult.assetId
+        });
+      }
+
+      const currentAlbums = draftData?.gallery || [];
+      const nextAlbums = currentAlbums.map((album) => {
+        if (album.id !== albumId) {
+          return album;
+        }
+
+        const existingImages =
+          Array.isArray(album.images) && album.images.length > 0
+            ? album.images
+            : album.imageUrl
+              ? [{ id: `${album.id}-cover`, imageUrl: album.imageUrl, imageAssetId: album.imageAssetId || "" }]
+              : [];
+
+        const mergedImages = [...existingImages, ...uploadedImages];
+        const nextCover = album.imageUrl || mergedImages[0]?.imageUrl || "";
+        const nextCoverAssetId =
+          album.imageAssetId || (nextCover === mergedImages[0]?.imageUrl ? mergedImages[0]?.imageAssetId : "") || "";
+
+        return {
+          ...album,
+          imageUrl: nextCover,
+          imageAssetId: nextCoverAssetId,
+          images: mergedImages
+        };
+      });
+
+      setDraftData((current) => ({
+        ...current,
+        gallery: nextAlbums
+      }));
+
+      const savedResult = await updateSection("gallery", nextAlbums, sessionToken);
+
+      setDraftData((current) => ({
+        ...current,
+        gallery: savedResult.value
+      }));
+      setSiteData((current) => ({
+        ...(current || {}),
+        gallery: savedResult.value
+      }));
+
+      setFeedback(`Uploaded ${files.length} photo${files.length === 1 ? "" : "s"} and saved album.`);
+    } catch (error) {
+      setFeedback(error.message);
+    } finally {
+      setUploadingTarget("");
+    }
   };
 
   const handleNewsEventDocumentUpload = async (section, itemId, attachmentId, file) => {
@@ -4936,16 +5214,11 @@ export default function AdminDashboardPage({ teamMode = false }) {
                   label: "Image Gallery",
                   content: (
                     <>
-                      <MediaCollectionEditor
-                        addLabel="Add Gallery Image"
-                        blankTitle=""
-                        helper="These images only appear on the gallery page. Uploads save immediately, and captions are optional."
-                        items={draftData.gallery}
+                      <GalleryAlbumsEditor
+                        albums={draftData.gallery}
                         onChange={(nextValue) => updatePath(["gallery"], nextValue)}
-                        onSelectImage={(itemId, file) => handleMediaUpload("gallery", itemId, file)}
-                        title="Gallery Images"
+                        onUploadImages={handleAlbumImagesUpload}
                         uploadingKey={uploadingTarget.startsWith("gallery:") ? uploadingTarget.replace("gallery:", "") : ""}
-                        captionLabel="Caption (Optional)"
                       />
                       <button className="button" disabled={saving === "gallery"} onClick={() => saveSection("gallery")} type="button">
                         {saving === "gallery" ? "Saving..." : "Save Gallery Images"}
